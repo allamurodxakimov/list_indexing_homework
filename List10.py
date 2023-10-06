@@ -6,4 +6,11 @@ def main(list_num):
     Returns:
         int: return answer
     """
-    return
+    a=0
+    ma = list_num[0]
+    while a<len(list_num):
+        if ma<list_num[a]:
+            ma=list_num[a]
+        a+=1
+    return ma
+print(main(list_num=[5, 32, 1, 4, 3]))
